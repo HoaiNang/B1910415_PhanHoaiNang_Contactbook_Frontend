@@ -4,6 +4,7 @@ class ContactService {
         this.api = createApiClient(baseUrl);
     }
     async getAll() {
+        console.log("ádasdasd");
         return (await this.api.get("/")).data;
     }
     async create(data) {
